@@ -1,4 +1,6 @@
-﻿namespace Kladionica.Models.Entity_Models
+﻿using System.Collections.Generic;
+
+namespace Kladionica.Models.Entity_Models
 {
     public class Par
     {
@@ -8,6 +10,7 @@
 
         public Liga Liga { get; set; }
         public Singl Singl { get; set; }
+        public ICollection<KlubParovi> KlubParovi { get; set; }
 
     }
 }
