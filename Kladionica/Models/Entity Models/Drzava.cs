@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Collections.Generic;
 
 namespace Kladionica.Models.Entity_Models
 {
@@ -10,5 +11,6 @@ namespace Kladionica.Models.Entity_Models
 
         public ICollection<Liga> Lige { get; set; }
         public ICollection<Klub> Klubovi { get; set; }
+
     }
 }

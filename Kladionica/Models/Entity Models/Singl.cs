@@ -11,8 +11,12 @@ namespace Kladionica.Models.Entity_Models
         public decimal DeltaProcenat { get; set; }
         public DateTime? Datum { get; set; }
         public string Opis { get; set; }
+        public decimal Suma { get; set; }
 
+        public int TiketId { get; set; }
         public int ParId { get; set; }
+        public Tiket Tiket { get; set; }
         public Par Par { get; set; }
+
     }
 }
